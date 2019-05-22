@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40843D41-67B2-4B51-8B58-DCBA95E30A82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kashyap_PrintersApp</RootNamespace>
+    <AssemblyName>Kashyap_PrintersApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditInvoiceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInvoiceEntry.Designer.cs">
+      <DependentUpon>EditInvoiceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceEntryModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceEntryModify.designer.cs">
+      <DependentUpon>InvoiceEntryModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceEntry.designer.cs">
+      <DependentUpon>InvoiceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReportBuyerNameWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReportBuyerNameWise.Designer.cs">
+      <DependentUpon>InvoiceReportBuyerNameWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReportDateWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReportDateWise.Designer.cs">
+      <DependentUpon>InvoiceReportDateWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReportBuyerWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReportBuyerWise.Designer.cs">
+      <DependentUpon>InvoiceReportBuyerWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KashyapPrinterDataSet.cs">
+      <DependentUpon>KashyapPrinterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KashyapPrinterDataSet.designer.cs">
+      <DependentUpon>KashyapPrinterDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Entry.designer.cs">
+      <DependentUpon>Payment_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EditInvoiceEntry.resx">
+      <DependentUpon>EditInvoiceEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceEntryModify.resx">
+      <DependentUpon>InvoiceEntryModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceEntry.resx">
+      <DependentUpon>InvoiceEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReportBuyerNameWise.resx">
+      <DependentUpon>InvoiceReportBuyerNameWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReportDateWise.resx">
+      <DependentUpon>InvoiceReportDateWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReportBuyerWise.resx">
+      <DependentUpon>InvoiceReportBuyerWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceSummaryBuyerWiseRpt.rdlc" />
+    <EmbeddedResource Include="InvoiceSummaryDateWiseRpt.rdlc" />
+    <EmbeddedResource Include="InvoiceSummaryRpt.rdlc" />
+    <EmbeddedResource Include="InvoiceRpt.rdlc" />
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Entry.resx">
+      <DependentUpon>Payment_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="KashyapPrinterDataSet.xsc">
+      <DependentUpon>KashyapPrinterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KashyapPrinterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KashyapPrinterDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KashyapPrinterDataSet.xss">
+      <DependentUpon>KashyapPrinterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\KSP.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
